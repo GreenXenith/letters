@@ -383,5 +383,6 @@ for letter in string.gmatch("abcdefghijklmnopqrstuvwxyz", ".") do
 		local material = name[2] or ""
 		local let = modname .. ":" .. material .. "_letter_"
 		minetest.register_alias(let..letter.."u", let..string.upper(letter))
+		minetest.register_alias(let..letter.."l", let..letter)
 	end
 end
